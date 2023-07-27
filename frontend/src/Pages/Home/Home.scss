@@ -1,0 +1,109 @@
+.home {
+    font-family: 'Poppins', sans-serif;
+    .features {
+        background-color: #f1fdf7;
+        display: flex;
+        justify-content: center;
+        padding: 100px 0px;
+
+        &.dark {
+            background-color: #0d084d;
+            
+            h1 {
+                margin-top: 0;
+                font-weight: 400 !important;
+                color: rgb(225, 221, 221) !important;
+            }
+            p {
+                color: rgb(225, 221, 221) !important;
+                margin-bottom: 10px !important;
+            }
+            .title {
+                color: rgb(225, 221, 221) !important;
+                font-weight: 300;
+                font-size: 14px;
+            }
+            img {
+                width: 100%;
+            }
+
+            button {
+                font-family: inherit;
+                background-color: #1dbf73;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                width: max-content;
+            }
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            width: 1400px;
+            gap: 145px;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                &:first-child {
+                    flex: 3;
+                }
+                &:last-child {
+                    flex: 3;
+                }
+                h1 {
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                    color: rgb(75, 74, 74);
+                    margin-top: 0;
+                }
+                p {
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: rgb(93, 91, 91);
+                    line-height: 28px;
+                    letter-spacing: 1px;
+                }
+                .title {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: rgb(88, 86, 86);
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+                video {
+                    width: 720px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    .projectheading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 0 0 0;
+
+        h1 {
+            color: rgb(57, 55, 55);
+            font-weight: 600;
+        }
+    }
+    hr {
+        border: 1px solid lightgray;
+    }
+}

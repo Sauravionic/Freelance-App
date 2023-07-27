@@ -1,0 +1,106 @@
+.featured {
+    font-family: 'Poppins', sans-serif;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    background-color: #013914;
+    color: white;
+
+    .container {
+        width: 1400px;
+        display: flex;
+        align-items: center;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            h1 {
+                margin: 0;
+                font-size: 40px;
+                letter-spacing: 2px;
+                i {
+                    font-weight: 400;
+                }
+            }
+
+            .search {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: white;
+                border-radius: 5px;
+
+                .searchInput {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        margin: 10px;
+                    }
+
+                    input {
+                        font-family: inherit;
+                        border: none;
+                        outline: none;
+                        width: 500px;
+                    }
+
+                }
+
+                button {
+                    font-family: inherit;
+                    width: 120px;
+                    height: 50px;
+                    border: none;
+                    background-color: #1dbf73;
+                    color: white;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #109758;
+                    }
+                }
+            }
+
+            .popular {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                span {}
+
+                button{
+                    font-family: inherit;
+                    color: white;
+                    background-color: transparent;
+                    border: 1px solid white;
+                    padding: 3px 10px;
+                    border-radius: 20px;
+                    font-size: 14px;
+                    cursor: pointer;
+                    transition: 0.5s all ease;
+                    font-weight: 500;
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        .right {
+            height: 100%;
+
+            img {
+                height: 100%;
+                object-fit: contain;
+
+            }
+        }
+    }
+}
