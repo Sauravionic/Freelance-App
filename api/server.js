@@ -16,6 +16,8 @@ const connectToDB = async () => {
         console.log(error);
     }
 }
+
+// Connections
 app.listen(process.env.PORT, () => {
     console.log("Backend Service Running");
     connectToDB();
