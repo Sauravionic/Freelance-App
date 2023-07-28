@@ -15,7 +15,7 @@ import reviewRoute from "./routes/review.route.js";
 const app = express();
 dotenv.config();
 app.use(cors());
-
+app.use(express.json())
 const connectToDB = async () => {
     try {
         await mongoose.connect(process.env.MONGO_URI);
