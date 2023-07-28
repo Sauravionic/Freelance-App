@@ -2,13 +2,13 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-import authRoute from "./routes/auth.route";
-import userRoute from "./routes/user.route";
-import gigRoute from "./routes/gig.route";
-import orderRoute from "./routes/order.route";
-import conversationRoute from "./routes/conversation.route";
-import messageRoute from "./routes/message.route";
-import reviewRoute from "./routes/review.route";
+import authRoute from "./routes/auth.route.js";
+import userRoute from "./routes/user.route.js";
+import gigRoute from "./routes/gig.route.js";
+import orderRoute from "./routes/order.route.js";
+import conversationRoute from "./routes/conversation.route.js";
+import messageRoute from "./routes/message.route.js";
+import reviewRoute from "./routes/review.route.js";
 
 
 
