@@ -9,13 +9,16 @@ import orderRoute from "./routes/order.route.js";
 import conversationRoute from "./routes/conversation.route.js";
 import messageRoute from "./routes/message.route.js";
 import reviewRoute from "./routes/review.route.js";
+import cookieParser from "cookie-parser";
 
 
 
 const app = express();
 dotenv.config();
 app.use(cors());
-app.use(express.json())
+app.use(express.json());
+app.use(cookieParser());
+
 const connectToDB = async () => {
     try {
         await mongoose.connect(process.env.MONGO_URI);
@@ -34,6 +37,12 @@ app.use("/api/conversations", conversationRoute);
 app.use("/api/messages", messageRoute);
 app.use("/api/reviews", reviewRoute);
 
+app.use((err, req, res, next) => {
+    const errorStatus = err.status || 500;
+    const errorMessage = err.message || "Something went wrong";
+
+    return res.status(errorStatus).send(errorMessage);
+})
 // Connections
 app.listen(process.env.PORT, () => {
     console.log("Backend Service Running");
