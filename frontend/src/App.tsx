@@ -1,6 +1,6 @@
-import Navbar from "./Components/Navbar/Navbar"
 import "./App.scss";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Navbar from "./Components/Navbar/Navbar"
 import Home from "./Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import Gigs from "./Pages/Gigs/Gigs";
@@ -10,7 +10,8 @@ import MyGigs from "./Pages/MyGigs/MyGigs";
 import Add from "./Pages/Add/Add";
 import Message from "./Pages/Message/Message";
 import Messages from "./Pages/Messages/Messages";
-
+import Login from "./Pages/Login/Login";
+import Register from "./Pages/Register/Register";
 
 function App() {
 
@@ -59,12 +60,17 @@ function App() {
         {
           path: "/messages",
           element: <Messages/>
+        },
+        {
+          path: "/login",
+          element: <Login/>
+        },
+        {
+          path: "/register",
+          element: <Register/>
         }
-
-
-        
       ]
-    }
+    },
   ])
   return (
     <div>
